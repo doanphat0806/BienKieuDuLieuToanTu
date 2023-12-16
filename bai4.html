@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+</head>
+<body>
+<h2>Nhập số A</h2>
+<input type="number" id="number1" placeholder="Nhập số A"> <br>
+<h2>Nhập số B</h2>
+<input type="number" id="number2" placeholder="Nhập số thứ hai">
+<br>
+<button onclick="Cong()">Cộng</button>
+
+<h2>Kết quả:</h2>
+<div id="ketqua">Kết quả phép tính là: </div>
+
+<script>
+    function Cong() {
+        let so1 = document.getElementById("number1").value;
+        let so2 = document.getElementById("number2").value;
+        let ketqua = Number(so1) + Number(so2);
+        document.getElementById("ketqua").innerHTML = "Kết quả: " + ketqua;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ Prompt</title>
+</head>
+<body>
+
+<label for="Input">Nhập số:</label>
+<input type="number" id="Input">
+
+<script>
+    var inputElement = document.getElementById("Input"); //lấy thẻ input bằng cách sử dụng getElementById và gán nó vào biến inputElement.
+    inputElement.addEventListener("input", function() { //Thêm sự kiện "input" để theo dõi sự thay đổi trong ô input.
+        var Input = inputElement.value; //Lấy giá trị từ ô input khi có sự kiện "input".
+        console.log("Giá trị mới: " + Input); //Hiển thị
+    });
+</script>
+</body>
+</html>
